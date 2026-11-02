@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Font size accessibility scaling */
+  .coral-font-normal {
+    font-size: 100%;
+  }
+  .coral-font-large {
+    font-size: 115%;
+  }
+  .coral-font-xl {
+    font-size: 130%;
+  }
+
+  /* High contrast mode for bright sunlight outdoors */
+  .coral-high-contrast {
+    filter: contrast(115%);
+  }
+  .coral-high-contrast button {
+    border-width: 2px !important;
+  }
+  .coral-high-contrast article {
+    border-width: 2px !important;
+    border-color: #0f172a !important;
+  }
+}
+
+/* Custom Keyframe Animations for CORAL Beacon & Logo */
+@keyframes coralBeaconPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.7));
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+}
+
+@keyframes coralRadarRipple {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes coralWaveSway {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+}
+
+@keyframes coralShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-coral-beacon {
+  animation: coralBeaconPulse 3s ease-in-out infinite;
+}
+
+.animate-coral-ripple {
+  animation: coralRadarRipple 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-coral-ripple-delay {
+  animation: coralRadarRipple 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation-delay: 1.4s;
+}
+
+.animate-coral-sway {
+  animation: coralWaveSway 4s ease-in-out infinite;
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: coralShimmer 2.5s infinite;
+}

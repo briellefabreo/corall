@@ -1,0 +1,6 @@
+{
+  "name": "CORAL — Community Online Reports and Alerts Link",
+  "description": "Mobile-based community information and monitoring application for Corcuera, Romblon. Verified announcements for power interruptions, sea travel status, and disaster advisories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

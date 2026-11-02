@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "CORAL — Community Online Reports & Alerts Link",
+  "short_name": "CORAL",
+  "description": "Mobile-based community information and monitoring application for Corcuera, Romblon.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0369a1",
+  "theme_color": "#0369a1",
+  "categories": ["news", "weather", "utilities", "government"],
+  "icons": [
+    {
+      "src": "/coral-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/coral-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

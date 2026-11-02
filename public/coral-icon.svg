@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#082f49" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle ring decoration -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#38bdf8" stroke-width="4" stroke-opacity="0.25" stroke-dasharray="8 12" />
+
+  <!-- Shield / Lighthouse / Beacon shape with filter -->
+  <g filter="url(#shadow)">
+    <!-- Sea wave crests -->
+    <path d="M120 370 C 170 330, 200 390, 256 360 C 312 330, 340 390, 392 360 L 392 390 C 340 420, 312 360, 256 390 C 200 420, 170 360, 120 390 Z" fill="#7dd3fc" opacity="0.6"/>
+    <path d="M110 395 C 165 365, 205 410, 256 385 C 307 360, 347 405, 402 380 L 402 405 C 347 430, 307 385, 256 410 C 205 435, 165 390, 110 420 Z" fill="#bae6fd" opacity="0.8"/>
+
+    <!-- Central Beacon / Signal Broadcast Tower -->
+    <path d="M256 120 L275 250 L237 250 Z" fill="#ffffff" />
+    <circle cx="256" cy="115" r="22" fill="#f59e0b" />
+
+    <!-- Radio / Alert Broadcast arcs -->
+    <path d="M210 100 A 60 60 0 0 0 210 130" fill="none" stroke="#fed7aa" stroke-width="8" stroke-linecap="round" />
+    <path d="M302 100 A 60 60 0 0 1 302 130" fill="none" stroke="#fed7aa" stroke-width="8" stroke-linecap="round" />
+    
+    <path d="M185 80 A 95 95 0 0 0 185 150" fill="none" stroke="#fde68a" stroke-width="8" stroke-linecap="round" opacity="0.8" />
+    <path d="M327 80 A 95 95 0 0 1 327 150" fill="none" stroke="#fde68a" stroke-width="8" stroke-linecap="round" opacity="0.8" />
+
+    <!-- Power bolt overlay in center -->
+    <polygon points="256,210 278,275 254,275 264,330 236,260 258,260" fill="#fbbf24" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- Lettering CORAL -->
+  <text x="256" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="8">CORAL</text>
+</svg>
